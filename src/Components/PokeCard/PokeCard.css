@@ -1,0 +1,16 @@
+.PokeCard {
+  height: 60vh;
+  padding: 10px 0;
+  background-color: rgb(255, 208, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.PokeCard img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

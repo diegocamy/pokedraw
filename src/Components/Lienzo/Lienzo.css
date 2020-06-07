@@ -1,0 +1,9 @@
+.Lienzo {
+  display: flex;
+  flex-direction: column;
+}
+
+.Lienzo button {
+  width: fit-content;
+  margin: auto;
+}
