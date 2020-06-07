@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/pokedraw/static/css/main.6cac42dc.chunk.css",
+    "main.js": "/pokedraw/static/js/main.8f5e1cbb.chunk.js",
+    "main.js.map": "/pokedraw/static/js/main.8f5e1cbb.chunk.js.map",
+    "runtime-main.js": "/pokedraw/static/js/runtime-main.ebd702fc.js",
+    "runtime-main.js.map": "/pokedraw/static/js/runtime-main.ebd702fc.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/pokedraw/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.f75a2e49.chunk.js": "/pokedraw/static/js/2.f75a2e49.chunk.js",
+    "static/js/2.f75a2e49.chunk.js.map": "/pokedraw/static/js/2.f75a2e49.chunk.js.map",
+    "index.html": "/pokedraw/index.html",
+    "precache-manifest.87d765a111ca5cc56540aa6c97c81f5c.js": "/pokedraw/precache-manifest.87d765a111ca5cc56540aa6c97c81f5c.js",
+    "service-worker.js": "/pokedraw/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/pokedraw/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.6cac42dc.chunk.css.map": "/pokedraw/static/css/main.6cac42dc.chunk.css.map",
+    "static/js/2.f75a2e49.chunk.js.LICENSE.txt": "/pokedraw/static/js/2.f75a2e49.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/pokedraw/static/media/logo.ae8bcdf7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebd702fc.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.f75a2e49.chunk.js",
+    "static/css/main.6cac42dc.chunk.css",
+    "static/js/main.8f5e1cbb.chunk.js"
+  ]
+}
