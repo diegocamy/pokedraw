@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 //HOOKS
-import useInterval from './hooks/useIntervalHook';
-import useWindowSize from './hooks/useWindowSizeHook';
+import useInterval from "./hooks/useIntervalHook";
+import useWindowSize from "./hooks/useWindowSizeHook";
 //COMPONENTS
-import Lienzo from './Components/Lienzo/Lienzo';
-import NavBar from './Components/Navbar/NavBar';
-import PokeCard from './Components/PokeCard/PokeCard';
+import Lienzo from "./Components/Lienzo/Lienzo";
+import NavBar from "./Components/Navbar/NavBar";
+import PokeCard from "./Components/PokeCard/PokeCard";
 //CSS
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   const [pokemon, setPokemon] = useState(null);
@@ -18,16 +18,15 @@ function App() {
   const [width, height] = useWindowSize();
 
   const getPokemon = async () => {
-    const {
-      data,
-    } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.ceil(
-      Math.random() * 386,
-    )}
+    const { data } =
+      await axios.get(`https://pokeapi.co/api/v2/pokemon/${Math.ceil(
+        Math.random() * 386
+      )}
     `);
 
     const fetchedPokemon = {
       nombre: data.name,
-      foto: `https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`,
+      foto: data.sprites.other["official-artwork"].front_default,
     };
 
     setPokemon(fetchedPokemon);
@@ -50,14 +49,14 @@ function App() {
   }, [tiempo]);
 
   return (
-    <div className='App'>
+    <div className="App">
       <NavBar />
       <h4>
         {tiempo >= 1
-          ? `Tienes ${tiempo} segundo${tiempo > 1 ? 's' : ''} para dibujar`
+          ? `Tienes ${tiempo} segundo${tiempo > 1 ? "s" : ""} para dibujar`
           : `Se terminó el tiempo!`}
       </h4>
-      <div className='main'>
+      <div className="main">
         <PokeCard pokemon={pokemon} />
         <Lienzo
           desactivarCanvas={desactivarCanvas}
